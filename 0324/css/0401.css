@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{  /*「*」是指所有的，所以所有選擇器都會受影響*/
+	padding: 0;
+	margin: 0;
+}
+
+/*header*/
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding: 20px 80px 10px;
+	box-sizing: border-box;
+	background-color: rgba(112,112,112,0.8);
+	z-index: 100000;
+}
+
+/*nav bar*/
+nav{
+	width: 60%;
+	margin: auto;
+	text-align: center;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	display: inline-block;
+	padding: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav li a:hover{
+	color: #F2C185;
+}
+

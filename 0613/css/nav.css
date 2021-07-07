@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	position:relative;
+	display: inline-block;
+	font-family: 'Fenix', serif;
+}
+
+/*==============level 1==============*/
+nav li a{
+	display:block;
+	font-size:18px;
+	width:90px;
+	line-height:24px;/*行高*/
+	color: #fff;
+	text-decoration:none;
+	text-align:center;
+}
+
+nav li a:hover{
+	text-decoration-line: underline;
+    text-decoration-style: solid;
+}

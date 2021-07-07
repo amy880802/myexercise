@@ -1,0 +1,8 @@
+:root {
+  --swiper-theme-color: #000;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+}

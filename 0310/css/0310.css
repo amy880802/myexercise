@@ -1,0 +1,89 @@
+@charset"utf-8";
+/*備註方式*/
+
+body{
+	font-family: Verdana, Geneva, sans-sarif, "微軟正黑體";
+	background: #011526;
+	margin: 0;
+	padding: 0;
+}
+
+header, nav, section, article, footer{
+	text-align: center;
+	color: #F2E8DC;
+}
+
+footer{
+	padding-bottom: 40px;
+}
+
+/*nav*/
+
+nav{
+	background: #BF2441;
+	padding: 25px;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	margin: 0px 5px;
+	display: inline;
+}
+
+nav li a {
+	color: #F2E8DC;
+	text-decoration: none;/*將底線去除*/
+}
+
+nav li a:hover{
+	color: #fff;
+}
+
+/*section*/
+section{
+	width: 80%; /*可依視窗大小做調整*/
+	margin: auto;/*置中*/
+	line-height: 2em;
+}
+
+section h1{
+	padding-top: 20px;
+}
+
+/*article*/
+article {
+	display: inline-block;
+	/*設定寬度，否則會以元素中最寬的寬度做為預設*/
+	width: 180px;
+	/*設定邊寬作為顯示*/
+	border: solid 0px #dddddd;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 12px;
+}
+
+article:hover{
+	background: #142C40;
+	color: #fff;
+	cursor: pointer;/*設定滑鼠游標*/
+	box-shadow: 4px 4px 8px rgba(190,190,190,0.5);
+}
+
+article:active{
+	background: #F2E8DC;
+	color: #011526;
+	box-shadow: 4px 4px 8px rgba(190,190,190,0.5);
+}
+
+.article_a{
+	color: #c26496;
+	text-decoration: none;
+}
+
+.article_a:hover{
+	color: #fff;
+}

@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url("rwd.css");
+
+body{
+	font-family: 'Fenix', serif;
+	font-family: 'Open Sans', sans-serif;
+}
+canvas{
+	position: fixed;
+	top: 0;
+	z-index: -1;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+::-moz-selection{ /*Firefox*/
+	color: rgba(255, 255, 255,1);
+	background: #D9736F;
+}
+
+::selection{
+	color: rgba(255, 255, 255,1);
+	background: #D9736F;
+}
+
+/* header */
+
+.header {
+  background-color: rgba(30, 30, 30, 1);
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.header ul {
+  margin: 0;
+  padding-top:8px;
+  padding-right: 9.375%;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(30, 30, 30, 1);
+}
+
+.header li a {
+  display: block;
+  padding-bottom: 30px;
+  padding-left: 9.375%;
+  font-family: 'Fenix', serif;
+  font-size:18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  text-decoration: underline;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 18px;;
+  padding:0px;
+  text-decoration: none;
+}
+
+.logo{
+	margin-left: 9.375%;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .3s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .3s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .3s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+/*banner*/
+.banner{
+	margin: auto;
+	position:relative;
+	overflow:hidden;
+	margin-top: 0px;
+	width:100%;
+	/*max-width:1440px;*/
+	height:632px;
+	background:url(../img/longbg.png) no-repeat;
+	background-size:cover;
+}
+
+.anitext{
+	position:absolute;
+	top:25%;
+	left:10%;
+	padding-right:10px;
+	opacity:0;
+
+
+	animation-name: ant;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 0.5s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-name: ant; /*動畫名稱*/
+	-webkit-animation-duration: 3s;/*動畫時間3秒*/
+	-webkit-animation-iteration-count: 1;/*播放次數1次*/
+	-webkit-animation-timing-function: ease;/*動態方式漸慢開始與結束*/
+	-webkit-animation-delay: 0.5s;/*0.5秒後播放*/
+	-webkit-animation-direction: normal;/*動畫播放順序為順向*/
+	-webkit-animation-fill-mode: forwards;/*動畫結束後停格於最後一格，需搭配direction*/
+}
+
+@keyframes ant{
+	from{
+		left:0%;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+.h1_a{
+	font-family: 'Fenix', serif;
+	font-size: 56px;
+	color: #3f3030;
+	margin-bottom: 16px;
+}
+
+.h2{
+	width: 100%;
+	max-width: 456px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 44px;
+	color: #3F3030;
+}
+
+.hoodily{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 44px;
+	color: #DC837B;
+}
+
+
+/*article*/
+
+/*article1*/
+.article1{
+	width: 100%;
+	padding-bottom: 120px;
+	background: #F7F7F7;
+}
+
+.article1_titlebox, .article2_titlebox{
+	width: 100%;
+	padding-top: 80px;
+}
+
+.h1_b{
+	margin: 0px;
+	text-align: center;
+	font-family: 'Fenix', serif;
+	color: #9E7474;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 56px;
+	line-height: 63px;
+	letter-spacing: 0.03em;
+}
+
+
+
+.p_a{
+	margin: 0 auto;
+	margin-top: 2px;
+	margin-bottom: -30px;
+	width: 70%;
+	max-width: 750px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #434343;
+}
+
+
+.new-work-imgbox{
+	padding-top: 45px;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+.box{
+	box-sizing: border-box;
+	width: 100%;
+	background: #F7F7F7;
+	z-index: 10;
+	overflow: hidden;
+	border-radius: 32px;
+	transform: rotate(0deg);
+}
+
+.box:hover{
+	cursor: pointer;
+	border-radius: 32px;
+}
+
+.imgbox{
+	width: 100%;
+	overflow: hidden;
+}
+
+.box img{
+	float: left;
+	width: 100%;
+	/*動態設定*/
+	transition: transform 1.5s;
+}
+
+/*滑鼠滑過的改變，此例為變大1.2倍*/
+.box:hover img{
+	transform: scale(1.2,1.2);/*Standard syntax*/
+	-ms-transform: scale(1.2,1.2);/*IE9*/
+	-webkit-transform: scale(1.2,1.2);/*Safari*/
+}
+
+.article1_buttonbox{
+	padding-top: 60px;
+	text-align: center;
+}
+
+
+button {
+    width: 194px;
+	height: 64px;	
+
+	background-color:rgba(217,115,111,0);
+	border: 1.5px solid #D9736F;
+	box-sizing: border-box;
+	border-radius: 16px;
+
+	font-family: 'Fenix', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: 0.03em;
+	color: rgba(217,115,111,1);
+}
+
+button:hover{
+	background-color:rgba(217,115,111,1);	
+	cursor: pointer;
+	color: rgba(255,255,255,1);
+}
+
+
+/*article2*/
+.article2{
+	width: 100%;
+	padding-bottom: 116px;
+	background: #F0F0F0;
+}
+
+.article2_formbox{
+	padding-top: 8px;
+}
+
+.form, .form_special{
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width:100%;
+	max-width: 932px;
+
+	background: #FFFFFF;
+	border: 1px solid #D2D2D2;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 24px;
+
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+
+	color: #BEBEBE;
+}
+
+
+.form{
+	height: 50px;
+	align-items: center;
+}
+
+.form_special{
+	height: 245px;
+	padding-top: 15px;
+}
+
+.form:hover, .form_special:hover{
+	cursor: pointer;
+	border: 1px solid #5BA7ED;
+}
+
+
+.article2_buttonbox{
+	padding-top: 30px;
+	text-align: center;
+}
+
+/*footer*/
+footer{
+	clear: both; /*這行可加可不加*/
+	height: 42px;
+	background: rgba(30, 30, 30, 1);
+	padding-top: 15px;
+	padding-bottom: 30px;
+	
+	font-family: 'Fenix', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+/*below is about page*/
+
+/*banner*/
+.about_img_box{
+	width: 100%;
+	padding-top: 95px;
+
+	background-repeat: no-repeat;
+
+	background:linear-gradient(#F0F0F0 72%, #F7F7F7 28%);
+	background-size: 100% 695px;
+}
+
+.img_about{
+	width: 800px;
+	position:relative;
+	display: block;
+	margin: auto;
+}
+
+/*article*/
+
+.about_article_box{
+	background: #F7F7F7;
+	padding-top: 42px;
+}
+
+
+.about_h2{
+	text-align: center;
+	padding-right: 32px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	color: #3F3030;
+}
+
+
+.p_b{
+	display: block;
+	margin: auto;
+	margin-top: 8px;
+	padding-left: 32px;
+	text-align: left;
+	max-width: 772px;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.01em;
+	color: #434343;
+
+}
+
+.about_article_buttonbox{
+	margin: auto;
+	padding-top: 60px;
+	text-align: center;
+	padding-bottom: 116px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

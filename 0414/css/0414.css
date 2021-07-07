@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	margin:0;
+	padding:0;
+	background: rgba(229,229,229,1);
+}
+
+/*header*/
+header{
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+header img{
+	display: block;
+	padding: 20px;
+	margin: auto;
+}
+
+/* nav bar */
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	background: rgba(38, 70, 83, 1);
+	position: -webkit-sticky; /*Safari*/
+	position: sticky;
+	top: 0;
+	z-index:2000;
+}
+
+nav ul{
+	margin: 0; 
+	padding: 0;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	display: inline-block;
+	padding:20px;
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+}
+
+nav li a:hover{
+	color: rgba(221,120,47,1);
+}
+
+/*section(這邊告訴要分成幾欄，它就會自己幫你生成然後分成三欄)*/
+section{
+	width: 80%;
+	margin: auto;
+	-webkit-column-count:3; /*Chrome,Safari,Opera*/
+	column-count: 3;
+	-webkit-column-gap:20px;/*Chrome,Safari,Opera*/
+	-moz-column-gap:20px;/*Firefox*/
+	column-gap: 20px;
+}
+
+.box, .box1, .box2{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	background: rgba(255,255,255,1);
+	margin: 12px 0px 0px;/*12是跟上面那張卡片的距離*/
+	z-index: 10;
+	overflow: hidden;
+	box-shadow: 2px 2px 8px rgba(173,181,189,1);/*水平位移 垂直位移 模糊程度 顏色*/
+	border-radius: 10px;
+}
+
+.box:hover, .box1:hover, .box2:hover{
+	cursor: pointer;
+}
+
+.imgbox{
+	width: 100%;
+	overflow: hidden;
+}
+
+.box .imgbox img, .box1 .imgbox img, .box2 .imgbox img{
+	float: left;
+	width: 100%;
+}
+
+.box .imgbox img{
+	transform: scale(1,1);/*Standard syntax*/
+	-ms-transform: scale(1,1);/*IE9*/
+	-webkit-transform: scale(1,1);/*Safari*/
+
+	/*動態設定*/
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+
+	/*動畫方式*/
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/*Safari*/
+}
+
+/*滑鼠滑過的改變，此例為變大1.2倍*/
+.box:hover .imgbox img{
+	transform: scale(1.2,1.2);/*Standard syntax*/
+	-ms-transform: scale(1.2,1.2);/*IE9*/
+	-webkit-transform: scale(1.2,1.2);/*Safari*/
+}
+
+.box1 .imgbox img{
+	transform: rotate(0deg) scale(1,1);/*Standard syntax*/
+	-ms-transform: rotate(0deg) scale(1,1);/*IE9*/
+	-webkit-transform: rotate(0deg) scale(1,1);/*Safari*/
+
+	/*動態設定*/
+	transition: transform 0.75s;
+	-webkit-transition: transform 0.75s;
+
+	/*動畫方式*/
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/*Safari*/
+}
+
+/*滑鼠滑過的改變，此例為變大1.2倍*/
+.box1:hover .imgbox img{
+	transform: rotate(10deg) scale(1.5,1.5);/*Standard syntax*/ /*放更大讓它不會出現邊邊*/
+	-ms-transform: rotate(10deg)  scale(1.5,1.5);/*IE9*/
+	-webkit-transform: rotate(10deg)  scale(1.5,1.5);/*Safari*/
+}
+
+.box2 .imgbox img{
+	filter: grayscale(100%);
+
+	/*動態設定*/
+	transition: transform 1s;
+	-webkit-transition: transform 1s;
+
+	/*動畫方式*/
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/*Safari*/
+}
+
+/*滑鼠滑過的改變，此例為變大1.2倍*/
+.box2:hover .imgbox img{
+	filter: grayscale(0%);
+
+	transform: scale(1.2,1.2);/*Standard syntax*/
+	-ms-transform: scale(1.2,1.2);/*IE9*/
+	-webkit-transform: scale(1.2,1.2);/*Safari*/
+}
+
+.box h3, .box1 h3, .box2 h3{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: rgba(221,120,47,1);
+}
+
+.box p, .box1 p, .box2 p{
+	box-sizing: border-box;
+	padding: 0px 20px;
+	color: rgba(42,157,143,1);
+}
+
+.head{
+	display: inline-block;
+	padding: 0px 20px 20px;
+}
+
+.head img{
+	float: left; /*讓圖片就算縮放也可以鎖定在限定範圍內*/
+	width: 40px;
+	height: 40px;
+	border-radius: 50%; /*要用正方形才能設定成圓形，不然會是橢圓*/
+}
+
+.head span{
+	float: left;
+	font-size: 13px;
+	color: rgba(42,157,143,1);
+	line-height: 40px;/*跟前面height一樣40px，讓文字跟圖片平行垂直置中*/
+	margin-left: 10px;
+}
+
+
+
+
+/*aside*/
+aside{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 100000;
+}
+
+.totop{
+	width: 44px;
+	height: 44px;
+	background: rgba(38,70,83,1) url(../images/top2x.png) no-repeat;
+	background-size: 200%;
+	background-position: 0px 0px;
+}
+
+.totop:hover{
+	background: rgba(38,70,83,1) url(../images/top2x.png) no-repeat;
+	background-size: 200%;
+	background-position: -44px 0px;
+}
+
+/*footer*/
+footer{
+	clear: both; /*這行可加可不加*/
+	padding: 20px 0px;
+	text-align: center;
+	color: rgba(38,70,83,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

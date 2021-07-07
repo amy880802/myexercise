@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Amy - UX Designer</title>
+    <link rel="stylesheet" type="text/css" href="css/0505.css">
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body ontouchstart>
+    <header class="header">
+        <!--logo-->
+        <a href="index.html" class="logo"><img src="img/logo.png" height="75px"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#featuredwork">Work</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!--banner-->
+    <div class="banner" id="top">
+        <div class="row">
+            <div class="col-m-12 col-12" style="padding:0px;">
+                <div class="anitext">
+                    <h1 class="h1_a">I’m Amy!</h1>
+                    <h2 class="h2">An UX Designer at <span class="hoodily">Hoodily</span> and now based in Taipei, Taiwan.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--article1-->
+    <article class="article1" id="featuredwork">
+        <div class="article1_titlebox">
+            <h1 class="h1_b">FEATURED WORK</h1>
+        </div>
+        <div class="row">
+            <div class="col-m-12 col-12">
+                <p class="p_a">During my time at university, I learned many skills through self-studying and school curricula. Among these skills, User Interface Design and User Experience Research are my area of expertise.</p>
+            </div>
+        </div>
+        <div class="new-work-imgbox">
+            <div class="row imglist">
+                <div class="col-m-4 col-4">
+                    <div class="box">
+                        <a rel="gallery1" class="fancybox" href="img/a1.jpg" title="拾緣戲院邀請卡設計" data-fancybox data-caption="&lt;b&gt;拾緣戲院邀請卡設計&lt;/b&gt;&lt;br /&gt;平面設計作品 &lt;em&gt;made by&lt;/em&gt; Adobe Illustrator">
+                            <img class="workimg" src="img/a1.jpg" alt="work1"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-m-4 col-4">
+                    <div class="box">
+                        <a rel="gallery1" class="fancybox" href="img/a2.jpg" title="畢業展覽網站設計" data-fancybox data-caption="&lt;b&gt;畢業展覽網站設計&lt;/b&gt;&lt;br /&gt;網頁設計作品 &lt;em&gt;made by&lt;/em&gt; Adobe XD">
+                            <img class="workimg" src="img/a2.jpg" alt="work2"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-m-4 col-4">
+                    <div class="box">
+                        <a rel="gallery1" class="fancybox" href="img/a3.jpg" title="節電APP設計" data-fancybox data-caption="&lt;b&gt;節電APP設計&lt;/b&gt;&lt;br /&gt;APP介面設計作品 &lt;em&gt;made by&lt;/em&gt; Adobe XD">
+                            <img class="workimg" src="img/a3.jpg" alt="work3"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="article1_buttonbox">
+            <button onclick="myFunction3()">View More</button>
+        </div>
+    </article>
+    <!--article2-->
+    <article class="article2" id="contact">
+        <div class="article2_titlebox">
+            <h1 class="h1_b">CONNECT WITH ME</h1>
+        </div>
+        <div class="row">
+            <div class="col-m-12 col-12">
+                <div class="article2_formbox">
+                    <div class="form" onclick="myFunction()">Name</div>
+                    <div class="form" onclick="myFunction()">Email</div>
+                    <div class="form" onclick="myFunction()">Subject</div>
+                    <div class="form_special" onclick="myFunction()">Leave your message...
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="article2_buttonbox">
+            <button onclick="myFunction2()">Submit</button>
+        </div>
+		
+    </article>
+    <footer>&copy; 2021 SHU YUN CHEN. All rights reserved.</footer>
+    <script>
+        function myFunction() {
+            alert("表格不能填歐，這是我手刻的！拍謝我還不會做能送資料的表格XD");
+        }
+        function myFunction2() {
+            alert("阿不然你／妳想像一下假裝它存在好了哈哈～");
+        }
+        function myFunction3() {
+            alert("以後會放上來～～");
+        }
+    </script>
+    <!-- Add jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Add fancyBox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/a08ea32dcc.js" crossorigin="anonymous"></script>
+    <script type="module" src="./js/mouse.js"></script>
+    <!-- <script type="text/javascript" src="js/0613.js"></script> -->
+</body>
+</html>

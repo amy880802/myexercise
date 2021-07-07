@@ -1,0 +1,90 @@
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>swiper rwd</title>
+<link rel="icon" type="image/png" href="images/hand.png">
+<!--css-->
+<link href="css/ad.css" rel="stylesheet" type="text/css">
+<!--js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/load.js"></script>
+
+<!--swiper-->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link href="css/swiper.css" rel="stylesheet" type="text/css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+
+<!--banner-->
+<!-- 1200 swiper -->
+<main id="m1">
+  <section>
+      <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" id="s_pic" style="height: 197.478px;">
+        <div class="swiper-wrapper" id="swiper-wrapper-ec4b943bea110bbd3" aria-live="off" style="transform: translate3d(0px, 0px, 0px); transition-duration: 1000ms;">
+          <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 1152px;"><a href="#"><img src="images/p1.jpg" style="height: 197.478px;"></a></div>
+          <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2" style="width: 1152px;"><a href="#"><img src="images/p2.jpg" style="height: 197.478px;"></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-ec4b943bea110bbd3" aria-disabled="false"></div>
+        <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ec4b943bea110bbd3" aria-disabled="true"></div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </section>
+</main>
+
+<!-- mobile -->
+<main id="m2">
+  <section>
+      <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" id="v_pic" style="height: 583.892px;">
+        <div class="swiper-wrapper" id="swiper-wrapper-4ef741e9610f91558" aria-live="off" style="transition-duration: 1000ms; transform: translate3d(-473px, 0px, 0px);">
+          <div class="swiper-slide swiper-slide-prev" style="width: 473px;"><a href="#"><img src="images/p1_v.jpg" style="height: 583.892px;"></a></div>
+          <div class="swiper-slide swiper-slide-active" style="width: 473px;"><a href="#"><img src="images/p2_v.jpg" style="height: 583.892px;"></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4ef741e9610f91558" aria-disabled="true"></div>
+        <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4ef741e9610f91558" aria-disabled="false"></div>
+      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </section>
+</main>
+
+<footer>
+【說明】 依RWD下不同尺寸，準備不同的照片，同一組的照片大小請固定，若有調動比例，請自行修改load.js中的內容
+<br><br>
+©All Rights Reserved. 圖片僅課堂練習使用，不得販售商用
+</footer>
+
+<!--swiper js-->
+
+<script>
+      var swiper = new Swiper(".swiper-container", {
+        speed: 1000,
+    spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+</script>
+
+
+
+</body>
+
+</html>

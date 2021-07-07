@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Amy - UX Designer</title>
+        <link rel="stylesheet" type="text/css" href="css/0505.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-RTC2XPRYCQ"></script>
+		<script>
+ 			 window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-RTC2XPRYCQ');
+		</script>
+    </head>
+    <body>
+    	<header>
+    		<div class="header_box">
+    			<!--logo-->
+    			<a href="#top"><img src="img/logo.png" height="75px"></a>
+    			
+    			<nav>
+    				<ui>
+    					<li><a href="about.html">About</a></li>
+    					<li><a href="#featuredwork">Work</a></li>
+    					<li><a href="#contact">Contact</a></li>
+    				</ui>
+    			</nav>
+    		</div>
+    	</header>
+
+    	<!--banner-->
+    	<div class="banner" id="top">
+    		<div class="anitext">
+    			<h1 class="h1_a">I’m Amy!</h1>
+    			<h2 class="h2">An UX Designer at <span class="hoodily">Hoodily</span> and now based in Hsinchu, Taiwan.</h2>
+    		</div>
+    	</div>
+
+    	<!--article-->
+
+    		<!--article1-->
+    		<article class="article1" id="featuredwork">
+    			<div class="article1_titlebox">
+    				<h1 class="h1_b">FEATURED WORK</h1>
+    			</div>
+    			<div class="article1_pbox">
+    				<p class="p_a">During my time at university, I learned many skills through self-studying and school curricula. Among these skills, User Interface Design and User Experience Research are my area of expertise.</p>
+    			</div>
+    			<div class="article1_imgbox">
+    				
+    					<!--box1-->
+    					<div class="box">
+    						<div class="imgbox">
+    							<img src="img/a1.jpg" alt="work1"/>
+    						</div>
+    					</div>
+    					<!--box2-->
+    					<div class="box">
+    						<div class="imgbox">
+    							<img src="img/a2.jpg" alt="work2"/>
+    						</div>
+    					</div>
+    					<!--box3-->
+    					<div class="box">
+    						<div class="imgbox">
+    							<img src="img/a3.jpg" alt="work3"/>
+    						</div>
+    					</div> 
+    			</div>
+    			<div class="article1_buttonbox">
+    				<button onclick="myFunction3()">
+    					View More
+    				</button>
+    			</div>
+    		</article>
+    		
+    		<!--article2-->
+    		<article class="article2" id="contact">
+    			<div class="article2_titlebox">
+    				<h1 class="h1_b">CONTACT ME</h1>
+    			</div>
+
+    			<div class="article2_formbox">
+    				<div class="form" onclick="myFunction()">Name</div>
+    				<div class="form" onclick="myFunction()">Email</div>
+    				<div class="form" onclick="myFunction()">Subject</div>
+    				<div class="form_special" onclick="myFunction()">Leave your message...
+                    </div>
+    			</div>
+				
+				<div class="article2_buttonbox">
+                    <button onclick="myFunction2()">Submit</button>
+    			</div>
+				
+    		</article>
+    		
+    	<footer>&copy; 2021 SHU YUN CHEN. All rights reserved.</footer>
+
+<script>
+function myFunction() {
+  alert("表格不能填歐，這是我手刻的！拍謝我還不會做能送資料的表格XD");
+}
+function myFunction2() {
+  alert("阿不然你／妳想像一下假裝它存在好了哈哈～");
+}
+function myFunction3() {
+  alert("以後會放上來～～");
+}
+</script>
+
+    </body>
+</html>

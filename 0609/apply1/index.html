@@ -1,0 +1,66 @@
+<html><head>
+<meta charset="utf-8">
+<title>today</title>
+<link href="css/ajax.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+
+<script src="https://kit.fontawesome.com/a08ea32dcc.js" crossorigin="anonymous"></script>
+
+</head>
+ 
+<body data-pagenum="0">
+
+<!--nav-->
+<nav><ul>
+<li class="ch_bg"><a href="index.html">全部</a></li>
+<li><a href="#">玉器</a></li>
+<li><a href="#">其他</a></li>
+</ul>
+
+<script>
+$(document).ready(function(){	
+	
+	var pn = $("body").data("pagenum");
+	
+	$("li").eq(pn).addClass("ch_bg");
+		
+});
+</script></nav>
+
+<!--form-->
+<form>
+	justify-content：
+
+	<select name="jc" id="jc">
+      <option value="">請選擇</option>
+      <option value="flex-start">flex-start</option>
+      <option value="flex-end">flex-end</option>
+      <option value="center">center</option>
+      <option value="space-between">space-between</option>
+      <option value="space-around">space-around</option>
+    </select>
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;align-items：
+    <select name="ai" id="ai">
+      <option value="">請選擇</option>
+      <option value="flex-start">flex-start</option>
+      <option value="flex-end">flex-end</option>
+      <option value="center">center</option>
+      <option value="baseline">baseline</option>
+      <option value="stretch">stretch</option>
+    </select>
+</form>
+
+<!--section-->
+<section style=""><div class="box"><div class="imgbox"><img src="images/1.png"></div><h3>宋蔡蘇黃米四家書　冊　宋黃庭堅書七言詩</h3><p>宋</p><p>黃庭堅</p><p>42.1x62</p></div><div class="box"><div class="imgbox"><img src="images/2.png"></div><h3>宋蘇軾書前赤壁賦　卷</h3><p>宋</p><p>蘇軾</p><p>&nbsp;</p></div><div class="box"><div class="imgbox"><img src="images/6.png"></div><h3>宋人畫魚籃觀音　軸</h3><p>宋</p><p>宋人</p><p>92.5</p></div><div class="box"><div class="imgbox"><img src="images/7.png"></div><h3>唐尉遲乙僧護國天王像　軸</h3><p>唐</p><p>尉遲乙僧</p><p>61.8</p></div><div class="box"><div class="imgbox"><img src="images/3.png"></div><h3>漢穀紋璧</h3><p>漢西元前206至西元220年</p><p>&nbsp;</p><p>直徑11.4公分孔徑2.6公分厚0.9公分</p></div><div class="box"><div class="imgbox"><img src="images/4.png"></div><h3>漢玉豬</h3><p>漢西元前206-西元220年</p><p>&nbsp;</p><p>長10.6公分寬3.1公分高2.8公分通高4.9(含木座)公分、木座長11.9公分寬3.4公分高2.5公分</p></div><div class="box"><div class="imgbox"><img src="images/5.png"></div><h3>明張宏倣陸治茶花水仙　軸</h3><p>明</p><p>張宏</p><p>239x89</p></div></section>
+
+<!--footer-->
+<footer>©All Rights Reserved. 圖片僅課堂練習使用，不得販售商用<br>
+<i class="fab fa-instagram ficon" aria-hidden="true"></i>
+</footer>
+
+
+
+</body></html>

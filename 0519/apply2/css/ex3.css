@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,900&display=swap&subset=chinese-traditional');
+
+*{
+	margin:0;
+	padding:0;
+	margin:auto;
+}
+
+body{
+	font-family:'Noto Sans TC', sans-serif;
+}
+
+/*header*/
+header{
+	width:100%;
+	height: 80px;
+	background:rgba(153, 184, 152, 1);
+}
+
+nav{
+	width:60%;
+	text-align:center;
+	margin:auto;
+}
+
+.box{
+	float:left;
+	width: 33.33%;
+	height: 80px;
+	font-size:24px;
+	line-height:80px;
+	box-sizing:border-box;
+	color:rgba(255, 255, 255, 1);
+	background:rgba(153, 184, 152, 1);
+	font-family: 'Pacifico', cursive;
+}
+
+.ch_bg{
+	background:rgba(51, 93, 45, 1);
+	cursor:pointer;
+}
+
+/*section*/
+section{
+	width:100%;
+	height:auto;
+}
+
+main{
+	position:relative;
+	height:auto;
+	width:100%;
+}
+
+.content{
+	position:absolute;
+	width:100%;
+	height:300px;
+	display:none;
+	z-index:1000;
+	color:rgba(51, 93, 45, 1);
+	font-size:100px;
+	background: rgba(255,255,255,0.5);
+	box-sizing:border-box;
+	padding:50px;
+}
+
+/*article*/
+article{
+	width:100%;
+	height:80vh;
+	overflow:hidden;
+}
+
+/*footer*/
+footer{
+	padding:50px;
+	text-align:center;	
+}
+
+
+

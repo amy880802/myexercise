@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content=" width=device-width; initial-scale=1.0;">
+        <title>Amy - UX Designer</title>
+        <link rel="stylesheet" type="text/css" href="css/0505.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="js/0613.js"></script>
+
+        <!--fontawesome-->
+        <script src="https://kit.fontawesome.com/a08ea32dcc.js" crossorigin="anonymous"></script>
+
+        <!-- Add jQuery library -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+        <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+    </head>
+    <body style="padding: 0; margin: 0;">
+
+        <header class="header">
+            <!--logo-->
+            <a href="index.html" class="logo"><img src="img/logo.png" height="75px"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn">
+                    <span class="navicon"></span>
+            </label>
+            <ul class="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#featuredwork">Work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </header>
+
+    	<!--banner-->
+    	<div class="banner" id="top">
+    		<div class="row">
+                <div class="col-m-12 col-12" style="padding:0px;">
+                    <div class="anitext">
+            			<h1 class="h1_a">I’m Amy!</h1>
+            			<h2 class="h2">An UX Designer at <span class="hoodily">Hoodily</span> and now based in Hsinchu, Taiwan.</h2>
+            		</div>
+                </div>
+            </div>
+    	</div>
+
+    	<!--article-->
+
+    		<!--article1-->
+    		<article class="article1" id="featuredwork">
+    			<div class="article1_titlebox">
+    				<h1 class="h1_b">FEATURED WORK</h1>
+    			</div>
+    			
+                <div class="row">
+                    <div class="col-m-12 col-12">
+            				<p class="p_a">During my time at university, I learned many skills through self-studying and school curricula. Among these skills, User Interface Design and User Experience Research are my area of expertise.</p>
+                    </div>
+                </div>
+    			
+
+                <div class="new-work-imgbox">
+                     <div class="row">
+                        <div class="col-m-4 col-4">
+                            <div class="box">
+                                <div class="imgbox">
+                                    <a rel="gallery1" class="fancybox" href="img/a1.jpg" title="拾緣戲院邀請卡設計">
+                                        <img class="workimg" src="img/a1.jpg" alt="work1"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-m-4 col-4">
+                            <div class="box">
+                                <div class="imgbox">
+                                    <a rel="gallery1" class="fancybox" href="img/a2.jpg" title="畢業展覽網站設計">
+                                        <img class="workimg" src="img/a2.jpg" alt="work2"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-m-4 col-4">
+                            <div class="box">
+                                <div class="imgbox">
+                                    <a rel="gallery1" class="fancybox" href="img/a3.jpg" title="節電APP設計">
+                                        <img class="workimg" src="img/a3.jpg" alt="work3"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+    			<div class="article1_buttonbox">
+    				<button onclick="myFunction3()">
+    					View More
+    				</button>
+    			</div>
+    		</article>
+    		
+    		<!--article2-->
+    		<article class="article2" id="contact">
+    			<div class="article2_titlebox">
+    				<h1 class="h1_b">CONNECT WITH ME</h1>
+    			</div>
+
+                <div class="row">
+                    <div class="col-m-12 col-12">
+            			<div class="article2_formbox">
+            				<div class="form" onclick="myFunction()">Name</div>
+            				<div class="form" onclick="myFunction()">Email</div>
+            				<div class="form" onclick="myFunction()">Subject</div>
+            				<div class="form_special" onclick="myFunction()">Leave your message...
+                            </div>
+            			</div>
+                    </div>
+                </div>
+				
+				<div class="article2_buttonbox">
+                    <button onclick="myFunction2()">Submit</button>
+    			</div>
+				
+    		</article>
+    		
+    	<footer>&copy; 2021 SHU YUN CHEN. All rights reserved.</footer>
+
+<script>
+function myFunction() {
+  alert("表格不能填歐，這是我手刻的！拍謝我還不會做能送資料的表格XD");
+}
+function myFunction2() {
+  alert("阿不然你／妳想像一下假裝它存在好了哈哈～");
+}
+function myFunction3() {
+  alert("以後會放上來～～");
+}
+</script>
+
+    </body>
+</html>

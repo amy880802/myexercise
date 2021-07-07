@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Fenix&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url("nav.css");
+
+font-family: 'Fenix', serif;
+font-family: 'Open Sans', sans-serif;
+
+*{
+	margin:0;
+	padding:0;
+}
+
+::-moz-selection{ /*Firefox*/
+	color: rgba(255, 255, 255,1);
+	background: #D9736F;
+}
+
+::selection{
+	color: rgba(255, 255, 255,1);
+	background: #D9736F;
+}
+
+/*header*/
+header{
+	width:100%;
+	height: 75px;
+	background: rgba(30, 30, 30, 1);
+	box-sizing:border-box;/*縮進去*/
+	margin:auto;
+	position: -webkit-sticky;/*Safari*/
+	position: sticky;
+	top: 0;
+	z-index: 2000;
+}
+
+.header_box{
+	width: 81.25%;
+	margin: auto;
+}
+
+.header_box img{
+	float: left;
+}
+
+nav{
+	float: right;
+	margin-top: 26px;
+	z-index: 10000;
+	background: rgba(30, 30, 30, 1);
+}
+
+/*banner*/
+.banner{
+	margin: auto;
+	position:relative;
+	overflow:hidden;
+	margin-top: 0px;
+	width:100%;
+	/*max-width:1440px;*/
+	height:632px;
+	background:url(../img/longbg.png) no-repeat;
+	background-size:cover;
+}
+
+.anitext{
+	position:absolute;
+	top:25%;
+	left:10%;
+	opacity:0;
+
+
+	animation-name: ant;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 0.5s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-name: ant; /*動畫名稱*/
+	-webkit-animation-duration: 3s;/*動畫時間3秒*/
+	-webkit-animation-iteration-count: 1;/*播放次數1次*/
+	-webkit-animation-timing-function: ease;/*動態方式漸慢開始與結束*/
+	-webkit-animation-delay: 0.5s;/*0.5秒後播放*/
+	-webkit-animation-direction: normal;/*動畫播放順序為順向*/
+	-webkit-animation-fill-mode: forwards;/*動畫結束後停格於最後一格，需搭配direction*/
+}
+
+@keyframes ant{
+	from{
+		left:0%;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+.h1_a{
+	font-family: 'Fenix', serif;
+	font-size: 56px;
+	color: #3f3030;
+}
+
+.h2{
+	width: 456px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 44px;
+	color: #3F3030;
+}
+
+.hoodily{
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 44px;
+	color: #DC837B;
+}
+
+
+/*article*/
+
+/*article1*/
+.article1{
+	width: 100%;
+	padding-bottom: 120px;
+	background: #F7F7F7;
+}
+
+.article1_titlebox, .article2_titlebox{
+	width: 100%;
+	padding-top: 80px;
+}
+
+.h1_b{
+	margin: 0px;
+	text-align: center;
+	font-family: 'Fenix', serif;
+	color: #9E7474;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 56px;
+	line-height: 63px;
+	letter-spacing: 0.03em;
+}
+
+.article1_pbox{
+	width: 100%;
+	padding-top: 25px;
+}
+
+.p_a{
+	margin: 0 auto;
+	width: 544px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #434343;
+}
+
+
+.article1_imgbox{
+	display: inline-flex;
+    padding-top: 45px;
+    padding-left: 16.875%;
+    padding-right: 16.875%;
+    margin: auto;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+}
+
+
+
+.box{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	background: #F7F7F7;
+/*  margin: 12px 0px 0px;   12是跟上面那張卡片的距離*/
+	z-index: 10;
+	overflow: hidden;
+	border-radius: 32px;
+	-webkit-border-radius: 32px;
+}
+
+.box:hover{
+	cursor: pointer;
+}
+
+.imgbox{
+	width: 100%;
+	overflow: hidden;
+}
+
+.box .imgbox img{
+	float: left;
+	width: 100%;
+	transform: scale(1,1);/*Standard syntax*/
+	-ms-transform: scale(1,1);/*IE9*/
+	-webkit-transform: scale(1,1);/*Safari*/
+
+	/*動態設定*/
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+
+	/*動畫方式*/
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/*Safari*/
+}
+
+/*滑鼠滑過的改變，此例為變大1.2倍*/
+.box:hover .imgbox img{
+	transform: scale(1.2,1.2);/*Standard syntax*/
+	-ms-transform: scale(1.2,1.2);/*IE9*/
+	-webkit-transform: scale(1.2,1.2);/*Safari*/
+}
+
+.article1_buttonbox{
+	padding-top: 80px;
+	text-align: center;
+}
+
+
+button {
+    width: 194px;
+	height: 64px;	
+
+	background-color:rgba(217,115,111,0);
+	border: 1.5px solid #D9736F;
+	box-sizing: border-box;
+	border-radius: 16px;
+
+	font-family: 'Fenix', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: 0.03em;
+	color: rgba(217,115,111,1);
+}
+
+button:hover{
+	background-color:rgba(217,115,111,1);	
+	cursor: pointer;
+	color: rgba(255,255,255,1);
+}
+
+
+/*article2*/
+.article2{
+	width: 100%;
+	padding-bottom: 94px;
+	background: #F0F0F0;
+}
+
+.article2_formbox{
+	padding-top: 60px;
+}
+
+.form{
+	margin: auto;
+	margin-bottom: 32px;
+	width: 932px;
+	height: 50px;
+	background: #FFFFFF;
+	border: 1px solid #D2D2D2;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 46px;
+
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	color: #BEBEBE;
+
+}
+
+.form_special{
+	margin: auto;
+	margin-bottom: 32px;
+	width: 932px;
+	height: 245px;
+	background: #FFFFFF;
+	border: 1px solid #D2D2D2;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 46px;
+	padding-top: 15px;
+
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	color: #BEBEBE;
+}
+
+.form:hover, .form_special:hover{
+	cursor: pointer;
+	border: 1px solid #5BA7ED;
+}
+
+
+.article2_buttonbox{
+	padding-top: 48px;
+	text-align: center;
+}
+
+/*footer*/
+footer{
+	clear: both; /*這行可加可不加*/
+	height: 42px;
+	background: rgba(30, 30, 30, 1);
+	padding-top: 20px;
+	
+	font-family: 'Fenix', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
